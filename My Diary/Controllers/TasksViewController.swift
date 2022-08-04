@@ -13,7 +13,7 @@ class TasksViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        title = "Tasks"
+        title = "Задачи"
         
     }
     

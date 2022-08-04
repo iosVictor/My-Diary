@@ -13,7 +13,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        title = "Map"
+        title = "Карта"
         
     }
     
