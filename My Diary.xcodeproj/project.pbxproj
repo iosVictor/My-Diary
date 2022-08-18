@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B056B3E62167C00FE5D6D8 /* Pods_My_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DBED76F143D676D9CE7434 /* Pods_My_Diary.framework */; };
 		ED5B33B02893DD7000841429 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33AF2893DD7000841429 /* DiaryViewController.swift */; };
 		ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B12893DD9300841429 /* TasksViewController.swift */; };
 		ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B32893DDE600841429 /* ContactsViewController.swift */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124D0A18C16F9049C4A8EDEB /* Pods-My Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Diary.release.xcconfig"; path = "Target Support Files/Pods-My Diary/Pods-My Diary.release.xcconfig"; sourceTree = "<group>"; };
+		40BC3C4FAD82F9DC46907025 /* Pods-My Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Diary.debug.xcconfig"; path = "Target Support Files/Pods-My Diary/Pods-My Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		42DBED76F143D676D9CE7434 /* Pods_My_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5B33AF2893DD7000841429 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		ED5B33B12893DD9300841429 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		ED5B33B32893DDE600841429 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B056B3E62167C00FE5D6D8 /* Pods_My_Diary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139C47EA3BECAF5C1252296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DBED76F143D676D9CE7434 /* Pods_My_Diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECD00A1E1AAF59E9354D893B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40BC3C4FAD82F9DC46907025 /* Pods-My Diary.debug.xcconfig */,
+				124D0A18C16F9049C4A8EDEB /* Pods-My Diary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDE698912893D6BE00E017DE = {
 			isa = PBXGroup;
 			children = (
 				EDE6989C2893D6BE00E017DE /* My Diary */,
 				EDE6989B2893D6BE00E017DE /* Products */,
+				ECD00A1E1AAF59E9354D893B /* Pods */,
+				3139C47EA3BECAF5C1252296 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDE698AE2893D6BF00E017DE /* Build configuration list for PBXNativeTarget "My Diary" */;
 			buildPhases = (
+				15FB9E9724A4483E8A71EC83 /* [CP] Check Pods Manifest.lock */,
 				EDE698962893D6BE00E017DE /* Sources */,
 				EDE698972893D6BE00E017DE /* Frameworks */,
 				EDE698982893D6BE00E017DE /* Resources */,
+				4EE9A3E64BAE38D0FBC467D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15FB9E9724A4483E8A71EC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE9A3E64BAE38D0FBC467D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Diary/Pods-My Diary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Diary/Pods-My Diary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Diary/Pods-My Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDE698962893D6BE00E017DE /* Sources */ = {
@@ -326,6 +394,7 @@
 		};
 		EDE698AF2893D6BF00E017DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40BC3C4FAD82F9DC46907025 /* Pods-My Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,6 +426,7 @@
 		};
 		EDE698B02893D6BF00E017DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 124D0A18C16F9049C4A8EDEB /* Pods-My Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
