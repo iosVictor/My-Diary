@@ -13,6 +13,10 @@
 		ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B32893DDE600841429 /* ContactsViewController.swift */; };
 		ED5B33B62893F81800841429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B52893F81800841429 /* MapViewController.swift */; };
 		ED5B33B828940DA700841429 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B728940DA700841429 /* UIColorExtension.swift */; };
+		EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */; };
+		EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1062228B3D24C00E641E4 /* UIStackView.swift */; };
+		EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1064428B40E1100E641E4 /* UILabel.swift */; };
+		EDD1064728B426AB00E641E4 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1064628B426AB00E641E4 /* UIFont.swift */; };
 		EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6989D2893D6BE00E017DE /* AppDelegate.swift */; };
 		EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6989F2893D6BF00E017DE /* SceneDelegate.swift */; };
 		EDE698A22893D6BF00E017DE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE698A12893D6BF00E017DE /* MainTabBarController.swift */; };
@@ -30,10 +34,16 @@
 		ED5B33B32893DDE600841429 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		ED5B33B52893F81800841429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED5B33B728940DA700841429 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EDD1061A28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EDD1061B28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		EDD1062228B3D24C00E641E4 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		EDD1064428B40E1100E641E4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		EDD1064628B426AB00E641E4 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		EDE6989A2893D6BE00E017DE /* My Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE6989D2893D6BE00E017DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE6989F2893D6BF00E017DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDE698A12893D6BF00E017DE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EDE698A12893D6BF00E017DE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		EDE698A42893D6BF00E017DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDE698A62893D6BF00E017DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE698A92893D6BF00E017DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +79,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EDD1061C28B3AEE200E641E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1061D28B3AF8100E641E4 /* Cell */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDD1061D28B3AF8100E641E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EDD1062028B3D1F000E641E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1062128B3D22900E641E4 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDD1062128B3D22900E641E4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1062228B3D24C00E641E4 /* UIStackView.swift */,
+				EDD1064428B40E1100E641E4 /* UILabel.swift */,
+				EDD1064628B426AB00E641E4 /* UIFont.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		EDE698912893D6BE00E017DE = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +136,8 @@
 			children = (
 				EDE698B12893D70B00E017DE /* Application */,
 				EDE698B22893D73900E017DE /* Controllers */,
+				EDD1061C28B3AEE200E641E4 /* Model */,
+				EDD1062028B3D1F000E641E4 /* Extensions */,
 				EDE698B32893D78000E017DE /* Resources */,
 				EDE698A32893D6BF00E017DE /* Main.storyboard */,
 			);
@@ -174,6 +220,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EDE698912893D6BE00E017DE;
 			productRefGroup = EDE6989B2893D6BE00E017DE /* Products */;
@@ -248,9 +295,13 @@
 				ED5B33B02893DD7000841429 /* DiaryViewController.swift in Sources */,
 				EDE698A22893D6BF00E017DE /* MainTabBarController.swift in Sources */,
 				ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */,
+				EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */,
 				ED5B33B828940DA700841429 /* UIColorExtension.swift in Sources */,
 				EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */,
+				EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */,
 				EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */,
+				EDD1064728B426AB00E641E4 /* UIFont.swift in Sources */,
+				EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */,
 				ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */,
 				ED5B33B62893F81800841429 /* MapViewController.swift in Sources */,
 			);
@@ -263,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EDE698A42893D6BF00E017DE /* Base */,
+				EDD1061B28B3A73200E641E4 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -271,6 +323,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EDE698A92893D6BF00E017DE /* Base */,
+				EDD1061A28B3A73200E641E4 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -282,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -342,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -409,6 +464,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,6 +497,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
