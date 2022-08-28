@@ -1,5 +1,5 @@
 //
-//  DiaryViewController.swift
+//  TasksViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 29.07.22.
@@ -8,8 +8,8 @@
 import UIKit
 import FSCalendar
 
-class DiaryViewController: UIViewController {
-    
+class TasksViewController: UIViewController {
+
     var calendarHeightConstraint: NSLayoutConstraint!
     
     private var calendar: FSCalendar = {
@@ -20,7 +20,7 @@ class DiaryViewController: UIViewController {
     
     let showHideButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Развернуть календарь", for: .normal)
+        button.setTitle("Open calendar", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "Avenir Next Demi Bold", size: 14)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -29,17 +29,22 @@ class DiaryViewController: UIViewController {
     
     let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.bounces = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
-    let idDiaryCell = "idDiaryCell"
+    let idTasksCell = "idTasksCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        title = "Дневник"
+        view.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
+        title = "Tasks"
+        
+        calendar.appearance.titleFont = UIFont.italicSystemFont(ofSize: 17)
+        calendar.appearance.headerTitleFont = UIFont.avenirNextDemiBold20()
+        calendar.appearance.weekdayFont = UIFont.avenirNextDemiBold14()
         
         calendar.delegate = self
         calendar.dataSource = self
@@ -47,21 +52,28 @@ class DiaryViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(DiaryTableViewCell.self, forCellReuseIdentifier: idDiaryCell)
+        tableView.register(TasksTableViewCell.self, forCellReuseIdentifier: idTasksCell)
         
         setConstraints()
         swipeAction()
         
         showHideButton.addTarget(self, action: #selector(showHideButtonTapped), for: .touchUpInside)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonTapped))
+    }
+    
+    @objc func addButtonTapped() {
+        let tasksOption = TaskOptionTableView()
+        navigationController?.pushViewController(tasksOption, animated: true)
     }
     
     @objc func showHideButtonTapped() {
         if calendar.scope == .week {
             calendar.setScope(.month, animated: true)
-            showHideButton.setTitle("Свернуть календарь", for: .normal)
+            showHideButton.setTitle("Close calendar", for: .normal)
         } else {
             calendar.setScope(.week, animated: true)
-            showHideButton.setTitle("Развернуть календарь", for: .normal)
+            showHideButton.setTitle("Open calendar", for: .normal)
         }
     }
     
@@ -89,24 +101,15 @@ class DiaryViewController: UIViewController {
     }
 }
 
-extension DiaryViewController: UITableViewDelegate, UITableViewDataSource {
+extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idDiaryCell, for: indexPath) as! DiaryTableViewCell
-        
-        switch indexPath.row {
-        case 0: cell.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-        case 1: cell.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        case 2: cell.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-        case 3: cell.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-        case 4: cell.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
-        case 5: cell.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-        default:
-        cell.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: idTasksCell, for: indexPath) as! TasksTableViewCell
+        cell.cellTaskDelegate = self
+        cell.index = indexPath
         return cell
     }
     
@@ -115,7 +118,13 @@ extension DiaryViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension DiaryViewController: FSCalendarDataSource, FSCalendarDelegate {
+extension TasksViewController: PressRadyTaskButtonProtocol {
+    func readyButtonTapped(indexPath: IndexPath) {
+        print("TAP")
+    }
+}
+
+extension TasksViewController: FSCalendarDataSource, FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
         calendarHeightConstraint.constant = bounds.height
@@ -127,7 +136,7 @@ extension DiaryViewController: FSCalendarDataSource, FSCalendarDelegate {
     }
 }
 
-extension DiaryViewController {
+extension TasksViewController {
     
     func setConstraints() {
         view.addSubview(calendar)

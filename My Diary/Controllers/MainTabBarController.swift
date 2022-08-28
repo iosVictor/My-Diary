@@ -18,10 +18,10 @@ class MainTabBarController: UITabBarController {
     
     func setupTapBar() {
         
-        let diaryViewController = createNavController(vc: DiaryViewController(), itemName: "Дневник", ItemImage: "book")
-        let tasksViewController = createNavController(vc: TasksViewController(), itemName: "Задачи", ItemImage: "text.badge.checkmark")
-        let contactsViewController = createNavController(vc: ContactsViewController(), itemName: "Контакты", ItemImage: "rectangle.stack.person.crop")
-        let mapViewController = createNavController(vc: MapViewController(), itemName: "Карта", ItemImage: "map")
+        let diaryViewController = createNavController(vc: DiaryViewController(), itemName: "Diary", ItemImage: "book")
+        let tasksViewController = createNavController(vc: TasksViewController(), itemName: "Tasks", ItemImage: "text.badge.checkmark")
+        let contactsViewController = createNavController(vc: ContactsViewController(), itemName: "Contacts", ItemImage: "rectangle.stack.person.crop")
+        let mapViewController = createNavController(vc: MapViewController(), itemName: "Map", ItemImage: "map")
         
         viewControllers = [diaryViewController, tasksViewController, contactsViewController, mapViewController]
     }

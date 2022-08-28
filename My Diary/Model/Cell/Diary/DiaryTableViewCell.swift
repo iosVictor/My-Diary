@@ -12,15 +12,17 @@ class DiaryTableViewCell: UITableViewCell {
     let meetingName = UILabel(text: "Программирование", font: .avenirNextDemiBold20())
     let personName = UILabel(text: "Таран Женя", font: .avenirNext20(), alignment: .right)
     let meetingTime = UILabel(text: "19:00", font: .avenirNextDemiBold20())
-    let typeLabel = UILabel(text: "Тип:", font: .avenirNext14(), alignment: .right)
+    let typeLabel = UILabel(text: "Type:", font: .avenirNext14(), alignment: .right)
     let meetingType = UILabel(text: "Учение АйТи", font: .avenirNextDemiBold14())
-    let addressLabel = UILabel(text: "Адрес:", font: .avenirNext14(), alignment: .right)
+    let addressLabel = UILabel(text: "Address:", font: .avenirNext14(), alignment: .right)
     let meetingAddress = UILabel(text: "Где угодно, в Zoom", font: .avenirNextDemiBold14())
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setConstraints()
+        
+        self.selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {
