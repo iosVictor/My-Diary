@@ -110,6 +110,7 @@ extension TasksViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: idTasksCell, for: indexPath) as! TasksTableViewCell
         cell.cellTaskDelegate = self
         cell.index = indexPath
+        cell.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         return cell
     }
     

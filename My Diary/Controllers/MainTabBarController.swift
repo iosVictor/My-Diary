@@ -13,7 +13,6 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         setupTapBar()
-        setTabBarAppearance()
     }
     
     func setupTapBar() {
@@ -32,40 +31,12 @@ class MainTabBarController: UITabBarController {
         
         let navController = UINavigationController(rootViewController: vc)
         navController.tabBarItem = item
+        
+        // стандартный вид navigationBar контроллера
+        navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+        
         return navController
     }
-    
-    private func setTabBarAppearance() {
-        let positionOnX: CGFloat = 8
-        let positionOnY: CGFloat = 8
-        let width = tabBar.bounds.width - positionOnX * 2
-        let height = tabBar.bounds.height + positionOnY * 2
-        
-        let roundLayer = CAShapeLayer()
-        
-        let bezierPath = UIBezierPath(
-            roundedRect: CGRect(
-                x: positionOnX,
-                y: tabBar.bounds.minY - positionOnY,
-                width: width,
-                height: height
-            ),
-            cornerRadius: height / 2
-        )
-        
-        roundLayer.path = bezierPath.cgPath
-        
-        tabBar.layer.insertSublayer(roundLayer, at: 0)
-        
-        tabBar.itemWidth = width / 5
-        tabBar.itemPositioning = .centered
-        
-        roundLayer.fillColor = UIColor.mainWhite.cgColor
-        
-        tabBar.tintColor = .tabBarItemAccent
-        tabBar.unselectedItemTintColor = .tabBarItemLight
-    }
-
 
 }
 

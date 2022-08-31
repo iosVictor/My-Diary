@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol PressRadyTaskButtonProtocol: class {
+protocol PressRadyTaskButtonProtocol: AnyObject {
     func readyButtonTapped(indexPath: IndexPath)
 }

@@ -66,6 +66,12 @@ class DiaryViewController: UIViewController {
         showHideButton.addTarget(self, action: #selector(showHideButtonTapped), for: .touchUpInside)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
+        
+        // стандартный вид tapBar контроллера
+        navigationController?.tabBarController?.tabBar.scrollEdgeAppearance = navigationController?.tabBarController?.tabBar.standardAppearance
+//        navigationController?.tabBarController?.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.7744978666, green: 0.2020181715, blue: 0.164677918, alpha: 1)
+        navigationController?.tabBarController?.tabBar.tintColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
     }
     
     @objc func addButtonTapped() {
@@ -114,7 +120,7 @@ extension DiaryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idDiaryCell, for: indexPath) as! DiaryTableViewCell
-        
+        cell.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         return cell
     }
     

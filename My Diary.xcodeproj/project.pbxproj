@@ -26,7 +26,6 @@
 		ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B12893DD9300841429 /* TasksViewController.swift */; };
 		ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B32893DDE600841429 /* ContactsViewController.swift */; };
 		ED5B33B62893F81800841429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B52893F81800841429 /* MapViewController.swift */; };
-		ED5B33B828940DA700841429 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B728940DA700841429 /* UIColorExtension.swift */; };
 		EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */; };
 		EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1062228B3D24C00E641E4 /* UIStackView.swift */; };
 		EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1064428B40E1100E641E4 /* UILabel.swift */; };
@@ -61,7 +60,6 @@
 		ED5B33B12893DD9300841429 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		ED5B33B32893DDE600841429 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		ED5B33B52893F81800841429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		ED5B33B728940DA700841429 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		EDD1061A28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EDD1061B28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 				ED09711428BACACB0015E2B1 /* Tasks */,
 				ED09711528BACADE0015E2B1 /* Contacts */,
 				ED09711628BACB540015E2B1 /* Map */,
-				ED5B33B728940DA700841429 /* UIColorExtension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -419,7 +416,6 @@
 				ED09712E28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift in Sources */,
 				EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */,
 				ED09711028BA8CEB0015E2B1 /* PressButtonProtocols.swift in Sources */,
-				ED5B33B828940DA700841429 /* UIColorExtension.swift in Sources */,
 				EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */,
 				EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */,
 				EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */,

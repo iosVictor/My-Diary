@@ -10,7 +10,7 @@ import UIKit
 class DiaryColorViewController: UITableViewController {
     
     let idOptionsColorCell = "idOptionsColorCell"
-    let idOptionsDiaryHeader = "idOptionsColorCell"
+    let idOptionsDiaryHeader = "idOptionsDiaryHeader"
     
     let headerNameArray = ["RED", "ORANGE", "YELLOW", "GREEN", "CYAN", "BLUE", "PURPLE"]
     
@@ -23,7 +23,7 @@ class DiaryColorViewController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.register(ColorTableViewCell.self, forCellReuseIdentifier: idOptionsColorCell)
-        tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsColorCell)
+        tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsDiaryHeader)
         
         title = "Colors"
 //        view.backgroundColor = .white
