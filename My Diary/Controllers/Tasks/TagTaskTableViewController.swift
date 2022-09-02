@@ -1,5 +1,5 @@
 //
-//  ColorTaskTableViewController.swift
+//  TagTaskTableViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ColorTaskTableViewController: UITableViewController {
+class TagTaskTableViewController: UITableViewController {
     
-    let idTaskColorCell = "idTaskColorCell"
+    let idTaskTagCell = "idTaskTagCell"
     let idTaskDiaryHeader = "idTaskDiaryHeader"
     
-    let headerNameArray = ["RED", "ORANGE", "YELLOW", "GREEN", "CYAN", "BLUE", "PURPLE"]
+    let headerNameArray = ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +22,10 @@ class ColorTaskTableViewController: UITableViewController {
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .none
         tableView.bounces = false
-        tableView.register(ColorTableViewCell.self, forCellReuseIdentifier: idTaskColorCell)
+        tableView.register(TagTableViewCell.self, forCellReuseIdentifier: idTaskTagCell)
         tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idTaskDiaryHeader)
         
-        title = "Color Tasks"
-//        view.backgroundColor = .white
-        
+        title = "Task Tag"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,11 +33,11 @@ class ColorTaskTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 1
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idTaskColorCell, for: indexPath) as! ColorTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: idTaskTagCell, for: indexPath) as! TagTableViewCell
         cell.cellConfigure(indexPath: indexPath)
         return cell
     }
@@ -55,7 +53,7 @@ class ColorTaskTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 32
+        return 24
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

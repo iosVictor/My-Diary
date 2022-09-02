@@ -8,7 +8,7 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
         
         let diaryViewController = createNavController(vc: DiaryViewController(), itemName: "Diary", ItemImage: "book")
         let tasksViewController = createNavController(vc: TasksViewController(), itemName: "Tasks", ItemImage: "text.badge.checkmark")
-        let contactsViewController = createNavController(vc: ContactsViewController(), itemName: "Contacts", ItemImage: "rectangle.stack.person.crop")
+        let contactsViewController = createNavController(vc: ContactsTableViewController(), itemName: "Contacts", ItemImage: "person.crop.circle")
         let mapViewController = createNavController(vc: MapViewController(), itemName: "Map", ItemImage: "map")
         
         viewControllers = [diaryViewController, tasksViewController, contactsViewController, mapViewController]
@@ -37,6 +37,5 @@ class MainTabBarController: UITabBarController {
         
         return navController
     }
-
 }
 

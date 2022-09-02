@@ -1,20 +1,20 @@
 //
-//  TaskOptionTableView.swift
+//  ContactOptionTableViewController.swift
 //  My Diary
 //
-//  Created by Victor Kimpel on 28.08.22.
+//  Created by Victor Kimpel on 2.09.22.
 //
 
 import UIKit
 
-class TaskOptionTableView: UITableViewController {
+class ContactOptionTableViewController: UITableViewController {
     
-    let idOptionsTaskCell = "idOptionsTaskCell"
-    let idOptionsTasksHeader = "idOptionsTasksHeader"
+    let idOptionsContactCell = "idOptionsContactCell"
+    let idOptionsContactHeader = "idOptionsContactHeader"
     
-    let headerNameArray = ["DATE", "EVENT", "TASK", "TAGS"]
+    let headerNameArray = ["NAME", "PHONE", "MAIL", "CATEGORY", "ADD IMAGE"]
     
-    let cellNameArray = ["Date", "Event", "Task", ""]
+    let cellNameArray = ["Name", "Phone", "Mail", "Category", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +24,14 @@ class TaskOptionTableView: UITableViewController {
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .none
         tableView.bounces = false
-        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: idOptionsTaskCell)
-        tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsTasksHeader)
+        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: idOptionsContactCell)
+        tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsContactHeader)
         
-        title = "Add task"
+        title = "Add event"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,17 +39,17 @@ class TaskOptionTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsTaskCell, for: indexPath) as! OptionsTableViewCell
-        cell.cellTasksConfigure(nameArray: cellNameArray, indexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsContactCell, for: indexPath) as! OptionsTableViewCell
+        cell.cellContactsConfigure(nameArray: cellNameArray, indexPath: indexPath)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        indexPath.section == 4 ? 200 : 44
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: idOptionsTasksHeader) as! HeaderOptionsTableViewCell
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: idOptionsContactHeader) as! HeaderOptionsTableViewCell
         header.headerConfigure(nameArray: headerNameArray, section: section)
         return header
     }
@@ -60,15 +60,16 @@ class TaskOptionTableView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! OptionsTableViewCell
+        
         switch indexPath.section {
-        case 0: alertDate(label: cell.nameCellLabel) { numberWeekday, date in
-            print(numberWeekday, date)
+        case 0: alertForCellName(label: cell.nameCellLabel, name: "Name Contact", placeholder: "Enter contact name")
+        case 1: alertForCellName(label: cell.nameCellLabel, name: "Phone Contact", placeholder: "Enter contact phone number")
+        case 2: alertForCellName(label: cell.nameCellLabel, name: "Email Contact", placeholder: "Enter contact email")
+        case 3: alertCategory(label: cell.nameCellLabel) { category in
+            print(category)
         }
-        case 1: alertForCellName(label: cell.nameCellLabel, name: "Event Name", placeholder: "Enter event name")
-        case 2: alertForCellName(label: cell.nameCellLabel, name: "Task", placeholder: "Enter a task")
-        case 3: pushControllers(vc: TagTaskTableViewController())
         default:
-            print("Tap OptionsTableView")
+            print("Tap ContactTableView")
         }
     }
     

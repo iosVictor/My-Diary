@@ -11,17 +11,20 @@
 		ED09710D28BA80090015E2B1 /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09710C28BA80090015E2B1 /* TasksTableViewCell.swift */; };
 		ED09711028BA8CEB0015E2B1 /* PressButtonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09710F28BA8CEB0015E2B1 /* PressButtonProtocols.swift */; };
 		ED09711228BACA4D0015E2B1 /* OptionsDiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09711128BACA4D0015E2B1 /* OptionsDiaryTableViewController.swift */; };
-		ED09711B28BAD3360015E2B1 /* OptionsDiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09711A28BAD3360015E2B1 /* OptionsDiaryTableViewCell.swift */; };
+		ED09711B28BAD3360015E2B1 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09711A28BAD3360015E2B1 /* OptionsTableViewCell.swift */; };
 		ED09711D28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09711C28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift */; };
 		ED09712028BB8F6B0015E2B1 /* AlertDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09711F28BB8F6B0015E2B1 /* AlertDate.swift */; };
 		ED09712228BBA6A80015E2B1 /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712128BBA6A80015E2B1 /* AlertTime.swift */; };
 		ED09712428BBAAD40015E2B1 /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */; };
-		ED09712628BBB0BA0015E2B1 /* DiaryColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712528BBB0BA0015E2B1 /* DiaryColorViewController.swift */; };
+		ED09712628BBB0BA0015E2B1 /* DiaryTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712528BBB0BA0015E2B1 /* DiaryTagViewController.swift */; };
 		ED09712828BBB23D0015E2B1 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712728BBB23D0015E2B1 /* PersonViewController.swift */; };
-		ED09712A28BBCB1B0015E2B1 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712928BBCB1B0015E2B1 /* ColorTableViewCell.swift */; };
+		ED09712A28BBCB1B0015E2B1 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712928BBCB1B0015E2B1 /* TagTableViewCell.swift */; };
 		ED09712C28BBD4E90015E2B1 /* TaskOptionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712B28BBD4E90015E2B1 /* TaskOptionTableView.swift */; };
-		ED09712E28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712D28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift */; };
-		ED09713028BBEF290015E2B1 /* ColorTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712F28BBEF290015E2B1 /* ColorTaskTableViewController.swift */; };
+		ED09713028BBEF290015E2B1 /* TagTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712F28BBEF290015E2B1 /* TagTaskTableViewController.swift */; };
+		ED09713228C27BFB0015E2B1 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */; };
+		ED09713428C283760015E2B1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713328C283760015E2B1 /* ContactsTableViewCell.swift */; };
+		ED09713628C29F350015E2B1 /* ContactOptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713528C29F350015E2B1 /* ContactOptionTableViewController.swift */; };
+		ED09713828C2AEF10015E2B1 /* AlertCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713728C2AEF10015E2B1 /* AlertCategory.swift */; };
 		ED5B33B02893DD7000841429 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33AF2893DD7000841429 /* DiaryViewController.swift */; };
 		ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B12893DD9300841429 /* TasksViewController.swift */; };
 		ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B32893DDE600841429 /* ContactsViewController.swift */; };
@@ -45,17 +48,20 @@
 		ED09710C28BA80090015E2B1 /* TasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
 		ED09710F28BA8CEB0015E2B1 /* PressButtonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocols.swift; sourceTree = "<group>"; };
 		ED09711128BACA4D0015E2B1 /* OptionsDiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsDiaryTableViewController.swift; sourceTree = "<group>"; };
-		ED09711A28BAD3360015E2B1 /* OptionsDiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsDiaryTableViewCell.swift; sourceTree = "<group>"; };
+		ED09711A28BAD3360015E2B1 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		ED09711C28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderOptionsTableViewCell.swift; sourceTree = "<group>"; };
 		ED09711F28BB8F6B0015E2B1 /* AlertDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDate.swift; sourceTree = "<group>"; };
 		ED09712128BBA6A80015E2B1 /* AlertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
 		ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
-		ED09712528BBB0BA0015E2B1 /* DiaryColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryColorViewController.swift; sourceTree = "<group>"; };
+		ED09712528BBB0BA0015E2B1 /* DiaryTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTagViewController.swift; sourceTree = "<group>"; };
 		ED09712728BBB23D0015E2B1 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
-		ED09712928BBCB1B0015E2B1 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		ED09712928BBCB1B0015E2B1 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
 		ED09712B28BBD4E90015E2B1 /* TaskOptionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOptionTableView.swift; sourceTree = "<group>"; };
-		ED09712D28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTaskTableViewCell.swift; sourceTree = "<group>"; };
-		ED09712F28BBEF290015E2B1 /* ColorTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTaskTableViewController.swift; sourceTree = "<group>"; };
+		ED09712F28BBEF290015E2B1 /* TagTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTaskTableViewController.swift; sourceTree = "<group>"; };
+		ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		ED09713328C283760015E2B1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		ED09713528C29F350015E2B1 /* ContactOptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactOptionTableViewController.swift; sourceTree = "<group>"; };
+		ED09713728C2AEF10015E2B1 /* AlertCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCategory.swift; sourceTree = "<group>"; };
 		ED5B33AF2893DD7000841429 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		ED5B33B12893DD9300841429 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		ED5B33B32893DDE600841429 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +124,7 @@
 			children = (
 				ED5B33AF2893DD7000841429 /* DiaryViewController.swift */,
 				ED09711128BACA4D0015E2B1 /* OptionsDiaryTableViewController.swift */,
-				ED09712528BBB0BA0015E2B1 /* DiaryColorViewController.swift */,
+				ED09712528BBB0BA0015E2B1 /* DiaryTagViewController.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -128,7 +134,7 @@
 			children = (
 				ED5B33B12893DD9300841429 /* TasksViewController.swift */,
 				ED09712B28BBD4E90015E2B1 /* TaskOptionTableView.swift */,
-				ED09712F28BBEF290015E2B1 /* ColorTaskTableViewController.swift */,
+				ED09712F28BBEF290015E2B1 /* TagTaskTableViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				ED5B33B32893DDE600841429 /* ContactsViewController.swift */,
+				ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */,
 				ED09712728BBB23D0015E2B1 /* PersonViewController.swift */,
 			);
 			path = Contacts;
@@ -154,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */,
-				ED09711A28BAD3360015E2B1 /* OptionsDiaryTableViewCell.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -163,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				ED09710C28BA80090015E2B1 /* TasksTableViewCell.swift */,
-				ED09712D28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -171,6 +176,8 @@
 		ED09711928BAD2AA0015E2B1 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				ED09713328C283760015E2B1 /* ContactsTableViewCell.swift */,
+				ED09713528C29F350015E2B1 /* ContactOptionTableViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				ED09711F28BB8F6B0015E2B1 /* AlertDate.swift */,
 				ED09712128BBA6A80015E2B1 /* AlertTime.swift */,
 				ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */,
+				ED09713728C2AEF10015E2B1 /* AlertCategory.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -198,7 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				ED09711C28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift */,
-				ED09712928BBCB1B0015E2B1 /* ColorTableViewCell.swift */,
+				ED09712928BBCB1B0015E2B1 /* TagTableViewCell.swift */,
+				ED09711A28BAD3360015E2B1 /* OptionsTableViewCell.swift */,
 				ED09711728BAD2790015E2B1 /* Diary */,
 				ED09711828BAD2910015E2B1 /* Tasks */,
 				ED09711928BAD2AA0015E2B1 /* Contacts */,
@@ -407,13 +416,13 @@
 				ED09711D28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift in Sources */,
 				EDE698A22893D6BF00E017DE /* MainTabBarController.swift in Sources */,
 				ED09712C28BBD4E90015E2B1 /* TaskOptionTableView.swift in Sources */,
-				ED09711B28BAD3360015E2B1 /* OptionsDiaryTableViewCell.swift in Sources */,
+				ED09713428C283760015E2B1 /* ContactsTableViewCell.swift in Sources */,
+				ED09711B28BAD3360015E2B1 /* OptionsTableViewCell.swift in Sources */,
 				ED09710D28BA80090015E2B1 /* TasksTableViewCell.swift in Sources */,
 				ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */,
-				ED09712A28BBCB1B0015E2B1 /* ColorTableViewCell.swift in Sources */,
-				ED09712628BBB0BA0015E2B1 /* DiaryColorViewController.swift in Sources */,
+				ED09712A28BBCB1B0015E2B1 /* TagTableViewCell.swift in Sources */,
+				ED09712628BBB0BA0015E2B1 /* DiaryTagViewController.swift in Sources */,
 				ED09712828BBB23D0015E2B1 /* PersonViewController.swift in Sources */,
-				ED09712E28BBDCE10015E2B1 /* OptionsTaskTableViewCell.swift in Sources */,
 				EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */,
 				ED09711028BA8CEB0015E2B1 /* PressButtonProtocols.swift in Sources */,
 				EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */,
@@ -421,10 +430,13 @@
 				EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */,
 				ED09711228BACA4D0015E2B1 /* OptionsDiaryTableViewController.swift in Sources */,
 				ED09712428BBAAD40015E2B1 /* AlertForCellName.swift in Sources */,
+				ED09713628C29F350015E2B1 /* ContactOptionTableViewController.swift in Sources */,
+				ED09713228C27BFB0015E2B1 /* ContactsTableViewController.swift in Sources */,
+				ED09713828C2AEF10015E2B1 /* AlertCategory.swift in Sources */,
 				EDD1064728B426AB00E641E4 /* UIFont.swift in Sources */,
 				EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */,
 				ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */,
-				ED09713028BBEF290015E2B1 /* ColorTaskTableViewController.swift in Sources */,
+				ED09713028BBEF290015E2B1 /* TagTaskTableViewController.swift in Sources */,
 				ED09712028BB8F6B0015E2B1 /* AlertDate.swift in Sources */,
 				ED5B33B62893F81800841429 /* MapViewController.swift in Sources */,
 				ED09712228BBA6A80015E2B1 /* AlertTime.swift in Sources */,

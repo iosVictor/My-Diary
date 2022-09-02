@@ -12,7 +12,13 @@ class OptionsDiaryTableViewController: UITableViewController {
     let idOptionsDiaryCell = "idOptionsDiaryCell"
     let idOptionsDiaryHeader = "idOptionsDiaryHeader"
     
-    let headerNameArray = ["DATE AND TIME", "EVENT", "PERSON", "COLOR", "PERIOD"]
+    let headerNameArray = ["DATE AND TIME", "EVENT", "PERSON", "TAGS", "PERIOD"]
+    
+    let cellNameArray = [["Date", "Time"],
+                         ["Name", "Type", "Address"],
+                         ["Person Name"],
+                         [""],
+                         ["Repeat every 7 days"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +28,10 @@ class OptionsDiaryTableViewController: UITableViewController {
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .none
         tableView.bounces = false
-        tableView.register(OptionsDiaryTableViewCell.self, forCellReuseIdentifier: idOptionsDiaryCell)
+        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: idOptionsDiaryCell)
         tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsDiaryHeader)
         
         title = "Add event"
-//        view.backgroundColor = .white
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,8 +50,8 @@ class OptionsDiaryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsDiaryCell, for: indexPath) as! OptionsDiaryTableViewCell
-        cell.cellConfigure(indexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsDiaryCell, for: indexPath) as! OptionsTableViewCell
+        cell.cellDiaryConfigure(nameArray: cellNameArray, indexPath: indexPath)
         return cell
     }
     
@@ -62,11 +66,11 @@ class OptionsDiaryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 24
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! OptionsDiaryTableViewCell
+        let cell = tableView.cellForRow(at: indexPath) as! OptionsTableViewCell
         switch indexPath {
         case [0,0]: alertDate(label: cell.nameCellLabel) { numberWeekday, date in
             print(numberWeekday, date)
@@ -79,7 +83,7 @@ class OptionsDiaryTableViewController: UITableViewController {
         case [1,2]: alertForCellName(label: cell.nameCellLabel, name: "Event Address", placeholder: "Enter event address")
             
         case [2,0]: pushControllers(vc: PersonViewController())
-        case [3,0]: pushControllers(vc: DiaryColorViewController())
+        case [3,0]: pushControllers(vc: DiaryTagViewController())
         default:
             print("Tap OptionsTableView")
         }

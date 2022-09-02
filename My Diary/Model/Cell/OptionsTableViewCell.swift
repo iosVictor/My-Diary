@@ -7,14 +7,15 @@
 
 import UIKit
 
-class OptionsDiaryTableViewCell: UITableViewCell {
+class OptionsTableViewCell: UITableViewCell {
     
-    let backgroundViewCell: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 10
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    let backgroundViewCell: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .white
+        imageView.layer.cornerRadius = 10
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     let nameCellLabel: UILabel = {
@@ -28,16 +29,10 @@ class OptionsDiaryTableViewCell: UITableViewCell {
         let repeatSwitch = UISwitch()
         repeatSwitch.isOn = true
         repeatSwitch.isHidden = true
-        repeatSwitch.onTintColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+        repeatSwitch.onTintColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
         repeatSwitch.translatesAutoresizingMaskIntoConstraints = false
         return repeatSwitch
     }()
-    
-    let cellNameArray = [["Date", "Time"],
-                         ["Name", "Type", "Address"],
-                         ["Person Name"],
-                         [""],
-                         ["Repeat every 7 days"]]
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -54,16 +49,30 @@ class OptionsDiaryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func cellConfigure(indexPath: IndexPath) {
-        nameCellLabel.text = cellNameArray[indexPath.section][indexPath.row]
+    func cellDiaryConfigure(nameArray: [[String]], indexPath: IndexPath) {
+        nameCellLabel.text = nameArray[indexPath.section][indexPath.row]
         
         if indexPath == [3,0] {
-            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
         }
         
         if indexPath == [4,0] {
             repeatSwitch.isHidden = false
         }
+    }
+    
+    func cellTasksConfigure(nameArray: [String], indexPath: IndexPath) {
+        nameCellLabel.text = nameArray[indexPath.section]
+        
+        if indexPath == [3,0] {
+            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
+        }
+    }
+    
+    func cellContactsConfigure(nameArray: [String], indexPath: IndexPath) {
+        nameCellLabel.text = nameArray[indexPath.section]
+        
+        indexPath.section == 4 ? backgroundViewCell.image = UIImage(systemName: "person.fill.viewfinder") : nil
     }
     
     @objc func switchChange(paramTarget: UISwitch) {

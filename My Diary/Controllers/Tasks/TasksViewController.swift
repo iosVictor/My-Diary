@@ -9,7 +9,7 @@ import UIKit
 import FSCalendar
 
 class TasksViewController: UIViewController {
-
+    
     var calendarHeightConstraint: NSLayoutConstraint!
     
     private var calendar: FSCalendar = {
@@ -35,7 +35,7 @@ class TasksViewController: UIViewController {
     }()
     
     let idTasksCell = "idTasksCell"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

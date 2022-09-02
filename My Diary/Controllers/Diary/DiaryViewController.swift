@@ -35,7 +35,7 @@ class DiaryViewController: UIViewController {
     }()
     
     let idDiaryCell = "idDiaryCell"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,11 +46,11 @@ class DiaryViewController: UIViewController {
         calendar.appearance.headerTitleFont = UIFont.avenirNextDemiBold20()
         calendar.appearance.weekdayFont = UIFont.avenirNextDemiBold14()
         
-//        calendar.appearance.todayColor = .systemGreen
-//        calendar.appearance.titleTodayColor = .white
-//        calendar.appearance.titleDefaultColor = .systemBlue
-//        calendar.appearance.headerTitleColor = .systemRed
-//        calendar.appearance.weekdayTextColor = .systemRed
+        //        calendar.appearance.todayColor = .systemGreen
+        //        calendar.appearance.titleTodayColor = .white
+        //        calendar.appearance.titleDefaultColor = .systemBlue
+        //        calendar.appearance.headerTitleColor = .systemRed
+        //        calendar.appearance.weekdayTextColor = .systemRed
         
         calendar.delegate = self
         calendar.dataSource = self
@@ -70,7 +70,7 @@ class DiaryViewController: UIViewController {
         
         // стандартный вид tapBar контроллера
         navigationController?.tabBarController?.tabBar.scrollEdgeAppearance = navigationController?.tabBarController?.tabBar.standardAppearance
-//        navigationController?.tabBarController?.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.7744978666, green: 0.2020181715, blue: 0.164677918, alpha: 1)
+        //        navigationController?.tabBarController?.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.7744978666, green: 0.2020181715, blue: 0.164677918, alpha: 1)
         navigationController?.tabBarController?.tabBar.tintColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
     }
     

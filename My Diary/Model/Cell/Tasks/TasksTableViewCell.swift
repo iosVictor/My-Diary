@@ -14,7 +14,7 @@ class TasksTableViewCell: UITableViewCell {
     
     let readyButton: UIButton = {
         let button = UIButton()
-        button.setBackgroundImage(UIImage(systemName: "chevron.down.circle.fill"), for: .normal)
+        button.setBackgroundImage(UIImage(systemName: "hand.thumbsup.circle"), for: .normal)
         button.tintColor = .black
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
