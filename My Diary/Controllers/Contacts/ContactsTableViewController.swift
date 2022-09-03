@@ -9,16 +9,21 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
     
+    let searchController = UISearchController()
+    
     let idContactsCell = "idContactsCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .singleLine
-        tableView.bounces = false
+//        tableView.bounces = false
         tableView.register(ContactsTableViewCell.self, forCellReuseIdentifier: idContactsCell)
         
         title = "Contacts"
