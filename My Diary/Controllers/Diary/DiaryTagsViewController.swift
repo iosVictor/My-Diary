@@ -1,5 +1,5 @@
 //
-//  DiaryTagViewController: .swift
+//  DiaryTagsViewController: .swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class DiaryTagViewController: UITableViewController {
+class DiaryTagsViewController: UITableViewController {
     
-    let idOptionsTagCell = "idOptionsTagCell"
-    let idOptionsDiaryHeader = "idOptionsDiaryHeader"
+    private let idOptionsTagCell = "idOptionsTagCell"
+    private let idOptionsDiaryHeader = "idOptionsDiaryHeader"
     
     let headerNameArray = ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY"]
     
@@ -22,10 +22,10 @@ class DiaryTagViewController: UITableViewController {
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .none
         tableView.bounces = false
-        tableView.register(TagTableViewCell.self, forCellReuseIdentifier: idOptionsTagCell)
+        tableView.register(TagsTableViewCell.self, forCellReuseIdentifier: idOptionsTagCell)
         tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsDiaryHeader)
         
-        title = "Event Tag"
+        title = "Event Tags"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,7 +37,7 @@ class DiaryTagViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsTagCell, for: indexPath) as! TagTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: idOptionsTagCell, for: indexPath) as! TagsTableViewCell
         cell.cellConfigure(indexPath: indexPath)
         return cell
     }

@@ -1,5 +1,5 @@
 //
-//  TagTableViewCell.swift
+//  TagsTableViewCell.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TagTableViewCell: UITableViewCell {
+class TagsTableViewCell: UITableViewCell {
     
     let backgroundViewCell: UIView = {
         let view = UIView()

@@ -1,5 +1,5 @@
 //
-//  TaskOptionTableView.swift
+//  TaskOptionsTableView.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TaskOptionTableView: UITableViewController {
+class TaskOptionsTableView: UITableViewController {
     
     let idOptionsTaskCell = "idOptionsTaskCell"
     let idOptionsTasksHeader = "idOptionsTasksHeader"
@@ -66,7 +66,7 @@ class TaskOptionTableView: UITableViewController {
         }
         case 1: alertForCellName(label: cell.nameCellLabel, name: "Event Name", placeholder: "Enter event name")
         case 2: alertForCellName(label: cell.nameCellLabel, name: "Task", placeholder: "Enter a task")
-        case 3: pushControllers(vc: TagTaskTableViewController())
+        case 3: pushControllers(vc: TaskTagTableViewController())
         default:
             print("Tap OptionsTableView")
         }

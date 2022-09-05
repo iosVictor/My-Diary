@@ -1,5 +1,5 @@
 //
-//  PersonViewController.swift
+//  PersonsViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonViewController: UIViewController {
+class PersonsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

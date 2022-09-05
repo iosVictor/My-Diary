@@ -10,7 +10,7 @@ import FSCalendar
 
 class DiaryViewController: UIViewController {
     
-    var calendarHeightConstraint: NSLayoutConstraint!
+    private var calendarHeightConstraint: NSLayoutConstraint!
     
     private var calendar: FSCalendar = {
         let calendar = FSCalendar()
@@ -18,7 +18,7 @@ class DiaryViewController: UIViewController {
         return calendar
     }()
     
-    let showHideButton: UIButton = {
+    private let showHideButton: UIButton = {
         let button = UIButton()
         button.setTitle("Open calendar", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), for: .normal)
@@ -27,14 +27,14 @@ class DiaryViewController: UIViewController {
         return button
     }()
     
-    let tableView: UITableView = {
+    private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.bounces = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
-    let idDiaryCell = "idDiaryCell"
+    private let idDiaryCell = "idDiaryCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,12 +74,12 @@ class DiaryViewController: UIViewController {
         navigationController?.tabBarController?.tabBar.tintColor = #colorLiteral(red: 0.05776286125, green: 0.2708898783, blue: 0.8681886792, alpha: 1)
     }
     
-    @objc func addButtonTapped() {
-        let diaryOption = OptionsDiaryTableViewController()
+    @objc private func addButtonTapped() {
+        let diaryOption = DiaryOptionsTableViewController()
         navigationController?.pushViewController(diaryOption, animated: true)
     }
     
-    @objc func showHideButtonTapped() {
+    @objc private func showHideButtonTapped() {
         if calendar.scope == .week {
             calendar.setScope(.month, animated: true)
             showHideButton.setTitle("Close calendar", for: .normal)
@@ -91,7 +91,7 @@ class DiaryViewController: UIViewController {
     
     //MARK: Swipe
     
-    func swipeAction() {
+    private func swipeAction() {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
         swipeUp.direction = .up
         calendar.addGestureRecognizer(swipeUp)
@@ -101,7 +101,7 @@ class DiaryViewController: UIViewController {
         calendar.addGestureRecognizer(swipeDown)
     }
     
-    @objc func handleSwipe(gesture: UISwipeGestureRecognizer) {
+    @objc private func handleSwipe(gesture: UISwipeGestureRecognizer) {
         switch gesture.direction {
         case .up:
             showHideButtonTapped()

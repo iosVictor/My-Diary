@@ -1,5 +1,5 @@
 //
-//  OptionsDiaryViewController.swift
+//  DiaryOptionsTableViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class OptionsDiaryTableViewController: UITableViewController {
+class DiaryOptionsTableViewController: UITableViewController {
     
-    let idOptionsDiaryCell = "idOptionsDiaryCell"
-    let idOptionsDiaryHeader = "idOptionsDiaryHeader"
+    private let idOptionsDiaryCell = "idOptionsDiaryCell"
+    private let idOptionsDiaryHeader = "idOptionsDiaryHeader"
     
     let headerNameArray = ["DATE AND TIME", "EVENT", "PERSON", "TAGS", "PERIOD"]
     
@@ -81,9 +81,8 @@ class OptionsDiaryTableViewController: UITableViewController {
         case [1,0]: alertForCellName(label: cell.nameCellLabel, name: "Event Name", placeholder: "Enter event name")
         case [1,1]: alertForCellName(label: cell.nameCellLabel, name: "Event Type", placeholder: "Enter event type")
         case [1,2]: alertForCellName(label: cell.nameCellLabel, name: "Event Address", placeholder: "Enter event address")
-            
-        case [2,0]: pushControllers(vc: PersonViewController())
-        case [3,0]: pushControllers(vc: DiaryTagViewController())
+        case [2,0]: pushControllers(vc: PersonsViewController())
+        case [3,0]: pushControllers(vc: DiaryTagsViewController())
         default:
             print("Tap OptionsTableView")
         }

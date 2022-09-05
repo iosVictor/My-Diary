@@ -1,5 +1,5 @@
 //
-//  PhotoCameraAlert.swift
+//  AlertPhotoCamera.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 3.09.22.

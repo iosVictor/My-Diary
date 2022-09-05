@@ -1,5 +1,5 @@
 //
-//  TagTaskTableViewController.swift
+//  TaskTagTableViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 28.08.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TagTaskTableViewController: UITableViewController {
+class TaskTagTableViewController: UITableViewController {
     
     let idTaskTagCell = "idTaskTagCell"
     let idTaskDiaryHeader = "idTaskDiaryHeader"
@@ -22,7 +22,7 @@ class TagTaskTableViewController: UITableViewController {
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
         tableView.separatorStyle = .none
         tableView.bounces = false
-        tableView.register(TagTableViewCell.self, forCellReuseIdentifier: idTaskTagCell)
+        tableView.register(TagsTableViewCell.self, forCellReuseIdentifier: idTaskTagCell)
         tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idTaskDiaryHeader)
         
         title = "Task Tag"
@@ -37,7 +37,7 @@ class TagTaskTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: idTaskTagCell, for: indexPath) as! TagTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: idTaskTagCell, for: indexPath) as! TagsTableViewCell
         cell.cellConfigure(indexPath: indexPath)
         return cell
     }

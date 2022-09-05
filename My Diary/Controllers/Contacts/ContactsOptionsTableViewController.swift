@@ -1,5 +1,5 @@
 //
-//  ContactOptionTableViewController.swift
+//  ContactsOptionsTableViewController.swift
 //  My Diary
 //
 //  Created by Victor Kimpel on 2.09.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContactOptionTableViewController: UITableViewController {
+class ContactsOptionsTableViewController: UITableViewController {
     
     let idOptionsContactCell = "idOptionsContactCell"
     let idOptionsContactHeader = "idOptionsContactHeader"
@@ -83,7 +83,7 @@ class ContactOptionTableViewController: UITableViewController {
     }
 }
 
-extension ContactOptionTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension ContactsOptionsTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func chooseImagePicker(source: UIImagePickerController.SourceType) {
         if UIImagePickerController.isSourceTypeAvailable(source) {
