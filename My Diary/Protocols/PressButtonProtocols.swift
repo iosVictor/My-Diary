@@ -10,3 +10,7 @@ import Foundation
 protocol PressRadyTaskButtonProtocol: AnyObject {
     func readyButtonTapped(indexPath: IndexPath)
 }
+
+protocol SwitchRepeatProtocol: AnyObject {
+    func switchRepeat(value: Bool)
+}

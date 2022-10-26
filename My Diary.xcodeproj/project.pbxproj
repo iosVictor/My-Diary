@@ -17,27 +17,31 @@
 		ED09712228BBA6A80015E2B1 /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712128BBA6A80015E2B1 /* AlertTime.swift */; };
 		ED09712428BBAAD40015E2B1 /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */; };
 		ED09712628BBB0BA0015E2B1 /* DiaryTagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712528BBB0BA0015E2B1 /* DiaryTagsViewController.swift */; };
-		ED09712828BBB23D0015E2B1 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712728BBB23D0015E2B1 /* PersonsViewController.swift */; };
+		ED09712828BBB23D0015E2B1 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712728BBB23D0015E2B1 /* PersonsTableViewController.swift */; };
 		ED09712A28BBCB1B0015E2B1 /* TagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712928BBCB1B0015E2B1 /* TagsTableViewCell.swift */; };
-		ED09712C28BBD4E90015E2B1 /* TaskOptionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712B28BBD4E90015E2B1 /* TaskOptionsTableView.swift */; };
-		ED09713028BBEF290015E2B1 /* TaskTagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712F28BBEF290015E2B1 /* TaskTagTableViewController.swift */; };
-		ED09713228C27BFB0015E2B1 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */; };
+		ED09712C28BBD4E90015E2B1 /* TaskOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09712B28BBD4E90015E2B1 /* TaskOptionsTableViewController.swift */; };
+		ED09713228C27BFB0015E2B1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713128C27BFB0015E2B1 /* ContactsViewController.swift */; };
 		ED09713428C283760015E2B1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713328C283760015E2B1 /* ContactsTableViewCell.swift */; };
 		ED09713628C29F350015E2B1 /* ContactsOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713528C29F350015E2B1 /* ContactsOptionsTableViewController.swift */; };
 		ED09713828C2AEF10015E2B1 /* AlertCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713728C2AEF10015E2B1 /* AlertCategory.swift */; };
 		ED09713A28C3F12F0015E2B1 /* AlertPhotoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713928C3F12F0015E2B1 /* AlertPhotoCamera.swift */; };
+		ED09713D28C63F7C0015E2B1 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713C28C63F7C0015E2B1 /* DiaryModel.swift */; };
+		ED09714028C6438E0015E2B1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09713F28C6438E0015E2B1 /* RealmManager.swift */; };
+		ED09714428C68C6D0015E2B1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09714328C68C6D0015E2B1 /* UIColor.swift */; };
+		ED09714628C69DDC0015E2B1 /* AlertOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09714528C69DDC0015E2B1 /* AlertOk.swift */; };
 		ED5B33B02893DD7000841429 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33AF2893DD7000841429 /* DiaryViewController.swift */; };
 		ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B12893DD9300841429 /* TasksViewController.swift */; };
-		ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B32893DDE600841429 /* ContactsViewController.swift */; };
 		ED5B33B62893F81800841429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B33B52893F81800841429 /* MapViewController.swift */; };
+		EDCE390728FD8D45002018F4 /* AlertMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCE390628FD8D45002018F4 /* AlertMap.swift */; };
 		EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */; };
 		EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1062228B3D24C00E641E4 /* UIStackView.swift */; };
 		EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1064428B40E1100E641E4 /* UILabel.swift */; };
 		EDD1064728B426AB00E641E4 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1064628B426AB00E641E4 /* UIFont.swift */; };
+		EDE2744B28CB4CCD002F7637 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE2744A28CB4CCD002F7637 /* TasksModel.swift */; };
+		EDE2744D28CB4ECA002F7637 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE2744C28CB4ECA002F7637 /* ContactModel.swift */; };
 		EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6989D2893D6BE00E017DE /* AppDelegate.swift */; };
 		EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6989F2893D6BF00E017DE /* SceneDelegate.swift */; };
 		EDE698A22893D6BF00E017DE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE698A12893D6BF00E017DE /* MainTabBarController.swift */; };
-		EDE698A52893D6BF00E017DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE698A32893D6BF00E017DE /* Main.storyboard */; };
 		EDE698A72893D6BF00E017DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE698A62893D6BF00E017DE /* Assets.xcassets */; };
 		EDE698AA2893D6BF00E017DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE698A82893D6BF00E017DE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -55,30 +59,33 @@
 		ED09712128BBA6A80015E2B1 /* AlertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
 		ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
 		ED09712528BBB0BA0015E2B1 /* DiaryTagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTagsViewController.swift; sourceTree = "<group>"; };
-		ED09712728BBB23D0015E2B1 /* PersonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
+		ED09712728BBB23D0015E2B1 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
 		ED09712928BBCB1B0015E2B1 /* TagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsTableViewCell.swift; sourceTree = "<group>"; };
-		ED09712B28BBD4E90015E2B1 /* TaskOptionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOptionsTableView.swift; sourceTree = "<group>"; };
-		ED09712F28BBEF290015E2B1 /* TaskTagTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagTableViewController.swift; sourceTree = "<group>"; };
-		ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		ED09712B28BBD4E90015E2B1 /* TaskOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOptionsTableViewController.swift; sourceTree = "<group>"; };
+		ED09713128C27BFB0015E2B1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		ED09713328C283760015E2B1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		ED09713528C29F350015E2B1 /* ContactsOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOptionsTableViewController.swift; sourceTree = "<group>"; };
 		ED09713728C2AEF10015E2B1 /* AlertCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCategory.swift; sourceTree = "<group>"; };
 		ED09713928C3F12F0015E2B1 /* AlertPhotoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPhotoCamera.swift; sourceTree = "<group>"; };
+		ED09713C28C63F7C0015E2B1 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		ED09713F28C6438E0015E2B1 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		ED09714328C68C6D0015E2B1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		ED09714528C69DDC0015E2B1 /* AlertOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOk.swift; sourceTree = "<group>"; };
 		ED5B33AF2893DD7000841429 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		ED5B33B12893DD9300841429 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		ED5B33B32893DDE600841429 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		ED5B33B52893F81800841429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EDCE390628FD8D45002018F4 /* AlertMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMap.swift; sourceTree = "<group>"; };
 		EDD1061A28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		EDD1061B28B3A73200E641E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		EDD1061E28B3AFDA00E641E4 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
 		EDD1062228B3D24C00E641E4 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		EDD1064428B40E1100E641E4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		EDD1064628B426AB00E641E4 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		EDE2744A28CB4CCD002F7637 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
+		EDE2744C28CB4ECA002F7637 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		EDE6989A2893D6BE00E017DE /* My Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE6989D2893D6BE00E017DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE6989F2893D6BF00E017DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDE698A12893D6BF00E017DE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
-		EDE698A42893D6BF00E017DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDE698A62893D6BF00E017DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE698A92893D6BF00E017DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDE698AB2893D6BF00E017DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,8 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				ED5B33B12893DD9300841429 /* TasksViewController.swift */,
-				ED09712B28BBD4E90015E2B1 /* TaskOptionsTableView.swift */,
-				ED09712F28BBEF290015E2B1 /* TaskTagTableViewController.swift */,
+				ED09712B28BBD4E90015E2B1 /* TaskOptionsTableViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -144,10 +150,9 @@
 		ED09711528BACADE0015E2B1 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				ED5B33B32893DDE600841429 /* ContactsViewController.swift */,
-				ED09713128C27BFB0015E2B1 /* ContactsTableViewController.swift */,
+				ED09713128C27BFB0015E2B1 /* ContactsViewController.swift */,
 				ED09713528C29F350015E2B1 /* ContactsOptionsTableViewController.swift */,
-				ED09712728BBB23D0015E2B1 /* PersonsViewController.swift */,
+				ED09712728BBB23D0015E2B1 /* PersonsTableViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -192,17 +197,38 @@
 				ED09712328BBAAD40015E2B1 /* AlertForCellName.swift */,
 				ED09713728C2AEF10015E2B1 /* AlertCategory.swift */,
 				ED09713928C3F12F0015E2B1 /* AlertPhotoCamera.swift */,
+				ED09714528C69DDC0015E2B1 /* AlertOk.swift */,
+				EDCE390628FD8D45002018F4 /* AlertMap.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
 		};
-		EDD1061C28B3AEE200E641E4 /* Model */ = {
+		ED09713B28C63F590015E2B1 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				ED09713C28C63F7C0015E2B1 /* DiaryModel.swift */,
+				EDE2744A28CB4CCD002F7637 /* TasksModel.swift */,
+				EDE2744C28CB4ECA002F7637 /* ContactModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		ED09713E28C6433A0015E2B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED09713F28C6438E0015E2B1 /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EDD1061C28B3AEE200E641E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED09713B28C63F590015E2B1 /* Realm */,
 				ED09711E28BB8F180015E2B1 /* Alert */,
 				EDD1061D28B3AF8100E641E4 /* Cell */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EDD1061D28B3AF8100E641E4 /* Cell */ = {
@@ -232,6 +258,7 @@
 				EDD1062228B3D24C00E641E4 /* UIStackView.swift */,
 				EDD1064428B40E1100E641E4 /* UILabel.swift */,
 				EDD1064628B426AB00E641E4 /* UIFont.swift */,
+				ED09714328C68C6D0015E2B1 /* UIColor.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -259,11 +286,11 @@
 			children = (
 				EDE698B12893D70B00E017DE /* Application */,
 				EDE698B22893D73900E017DE /* Controllers */,
-				EDD1061C28B3AEE200E641E4 /* Model */,
+				EDD1061C28B3AEE200E641E4 /* Models */,
+				ED09713E28C6433A0015E2B1 /* Services */,
 				EDD1062028B3D1F000E641E4 /* Extensions */,
 				ED09710E28BA8C800015E2B1 /* Protocols */,
 				EDE698B32893D78000E017DE /* Resources */,
-				EDE698A32893D6BF00E017DE /* Main.storyboard */,
 			);
 			path = "My Diary";
 			sourceTree = "<group>";
@@ -362,7 +389,6 @@
 			files = (
 				EDE698AA2893D6BF00E017DE /* LaunchScreen.storyboard in Resources */,
 				EDE698A72893D6BF00E017DE /* Assets.xcassets in Resources */,
-				EDE698A52893D6BF00E017DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,30 +442,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5B33B02893DD7000841429 /* DiaryViewController.swift in Sources */,
+				ED09713D28C63F7C0015E2B1 /* DiaryModel.swift in Sources */,
 				ED09711D28BADB390015E2B1 /* HeaderOptionsTableViewCell.swift in Sources */,
 				EDE698A22893D6BF00E017DE /* MainTabBarController.swift in Sources */,
-				ED09712C28BBD4E90015E2B1 /* TaskOptionsTableView.swift in Sources */,
+				ED09714628C69DDC0015E2B1 /* AlertOk.swift in Sources */,
+				ED09712C28BBD4E90015E2B1 /* TaskOptionsTableViewController.swift in Sources */,
+				ED09714428C68C6D0015E2B1 /* UIColor.swift in Sources */,
+				EDCE390728FD8D45002018F4 /* AlertMap.swift in Sources */,
 				ED09713428C283760015E2B1 /* ContactsTableViewCell.swift in Sources */,
 				ED09711B28BAD3360015E2B1 /* OptionsTableViewCell.swift in Sources */,
 				ED09710D28BA80090015E2B1 /* TasksTableViewCell.swift in Sources */,
 				ED5B33B22893DD9300841429 /* TasksViewController.swift in Sources */,
 				ED09712A28BBCB1B0015E2B1 /* TagsTableViewCell.swift in Sources */,
 				ED09712628BBB0BA0015E2B1 /* DiaryTagsViewController.swift in Sources */,
-				ED09712828BBB23D0015E2B1 /* PersonsViewController.swift in Sources */,
+				ED09712828BBB23D0015E2B1 /* PersonsTableViewController.swift in Sources */,
 				EDD1064528B40E1100E641E4 /* UILabel.swift in Sources */,
 				ED09711028BA8CEB0015E2B1 /* PressButtonProtocols.swift in Sources */,
 				EDE6989E2893D6BE00E017DE /* AppDelegate.swift in Sources */,
 				EDD1061F28B3AFDA00E641E4 /* DiaryTableViewCell.swift in Sources */,
+				EDE2744D28CB4ECA002F7637 /* ContactModel.swift in Sources */,
+				EDE2744B28CB4CCD002F7637 /* TasksModel.swift in Sources */,
 				EDE698A02893D6BF00E017DE /* SceneDelegate.swift in Sources */,
 				ED09711228BACA4D0015E2B1 /* DiaryOptionsTableViewController.swift in Sources */,
 				ED09712428BBAAD40015E2B1 /* AlertForCellName.swift in Sources */,
 				ED09713628C29F350015E2B1 /* ContactsOptionsTableViewController.swift in Sources */,
-				ED09713228C27BFB0015E2B1 /* ContactsTableViewController.swift in Sources */,
+				ED09713228C27BFB0015E2B1 /* ContactsViewController.swift in Sources */,
 				ED09713828C2AEF10015E2B1 /* AlertCategory.swift in Sources */,
 				EDD1064728B426AB00E641E4 /* UIFont.swift in Sources */,
 				EDD1062328B3D24C00E641E4 /* UIStackView.swift in Sources */,
-				ED5B33B42893DDE600841429 /* ContactsViewController.swift in Sources */,
-				ED09713028BBEF290015E2B1 /* TaskTagTableViewController.swift in Sources */,
+				ED09714028C6438E0015E2B1 /* RealmManager.swift in Sources */,
 				ED09712028BB8F6B0015E2B1 /* AlertDate.swift in Sources */,
 				ED09713A28C3F12F0015E2B1 /* AlertPhotoCamera.swift in Sources */,
 				ED5B33B62893F81800841429 /* MapViewController.swift in Sources */,
@@ -450,15 +481,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EDE698A32893D6BF00E017DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDE698A42893D6BF00E017DE /* Base */,
-				EDD1061B28B3A73200E641E4 /* ru */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDE698A82893D6BF00E017DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -601,7 +623,6 @@
 				INFOPLIST_FILE = "My Diary/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
@@ -634,7 +655,6 @@
 				INFOPLIST_FILE = "My Diary/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";

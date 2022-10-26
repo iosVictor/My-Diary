@@ -6,6 +6,7 @@ target 'My Diary' do
   use_frameworks!
 
 pod 'FSCalendar'
+pod 'RealmSwift', '~>10'
 
   # Pods for My Diary
 

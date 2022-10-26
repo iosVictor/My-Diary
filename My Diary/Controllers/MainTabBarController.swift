@@ -15,11 +15,11 @@ class MainTabBarController: UITabBarController {
         setupTapBar()
     }
     
-    func setupTapBar() {
+    private func setupTapBar() {
         
         let diaryViewController = createNavController(vc: DiaryViewController(), itemName: "Diary", ItemImage: "book")
         let tasksViewController = createNavController(vc: TasksViewController(), itemName: "Tasks", ItemImage: "text.badge.checkmark")
-        let contactsViewController = createNavController(vc: ContactsTableViewController(), itemName: "Contacts", ItemImage: "person.crop.circle")
+        let contactsViewController = createNavController(vc: ContactsViewController(), itemName: "Contacts", ItemImage: "person.crop.circle")
         let mapViewController = createNavController(vc: MapViewController(), itemName: "Map", ItemImage: "map")
         
         viewControllers = [diaryViewController, tasksViewController, contactsViewController, mapViewController]
@@ -32,8 +32,8 @@ class MainTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: vc)
         navController.tabBarItem = item
         
-        // стандартный вид navigationBar контроллера
-        navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+        // Standard navigationBar controller view:
+//        navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
         
         return navController
     }

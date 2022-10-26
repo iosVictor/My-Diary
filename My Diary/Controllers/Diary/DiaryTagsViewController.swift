@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol DiaryTagsActionPerformer: AnyObject {
+    func setColor(color: String)
+}
+
 class DiaryTagsViewController: UITableViewController {
     
     private let idOptionsTagCell = "idOptionsTagCell"
@@ -14,18 +18,25 @@ class DiaryTagsViewController: UITableViewController {
     
     let headerNameArray = ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "PURPLE", "GREY"]
     
+    var actionPerformer: DiaryTagsActionPerformer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Event Tags"
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = #colorLiteral(red: 1, green: 0.972737968, blue: 0.7814538479, alpha: 1)
+        tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "fon"))
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.register(TagsTableViewCell.self, forCellReuseIdentifier: idOptionsTagCell)
         tableView.register(HeaderOptionsTableViewCell.self, forHeaderFooterViewReuseIdentifier: idOptionsDiaryHeader)
-        
-        title = "Event Tags"
+    }
+    
+    private func setColor(color: String) {
+        actionPerformer?.setColor(color: color)
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,11 +64,22 @@ class DiaryTagsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 24
+        return 16
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("TapCell")
+        switch indexPath.section {
+        case 0: setColor(color: "FF5B50")
+        case 1: setColor(color: "FAA40F")
+        case 2: setColor(color: "FFE014")
+        case 3: setColor(color: "2BEF4A")
+        case 4: setColor(color: "1C97FF")
+        case 5: setColor(color: "D771FF")
+        case 6: setColor(color: "92939D")
+        default:
+            setColor(color: "FFFFFF")
+        }
     }
 }
 
